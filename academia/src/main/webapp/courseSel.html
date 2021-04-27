@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Selection</title>
+    <link href="assets/css/courseSel.css" rel="stylesheet">
+
+</head>
+<body>
+<h1>COURSE SELECTION</h1>
+<br>
+<br>
+<form class="form-signin" id="register-valid">
+<div class="mb-3">
+    <label for="courses" class="bkp">Courses</label>
+    <select class="custom-select d-block w-100" id="courses" required>
+        <option value="">Choose...</option>
+    </select>
+    <button type="submit" id="button">Enroll</button><br>
+    <div class="alert alert-warning" role="alert" id="login-alert" style="display: none; margin-top: 20px">
+        Cannot Enroll!!
+    </div>
+    <div class="alert alert-success" role="alert" id="login-success" style="display: none; margin-top: 20px">
+        Enrolled Successfully!!
+    </div>
+</div>
+
+<br><br><br>
+
+    <div id="table-holder">
+        <table id="table">
+
+        </table>
+    </div>
+
+    <button type="submit" id="submit-button" class="float-left submit-button">Back to my Profile</button><br>
+    <script type="text/javascript">
+        document.getElementById("submit-button").onclick = function() {
+            location.href = "myprof.html";
+        };
+        </script>
+
+
+</form>
+</body>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/courseSel.js"></script>
+</html>

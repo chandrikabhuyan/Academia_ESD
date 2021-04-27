@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>My Profile</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/myprof.css">
+
+</head>
+
+<body>
+
+<h2 style="text-align:center">User Profile</h2>
+<div class="container-fluid">
+    <div class="row content">
+
+        <div class="col-md-6 mb-3 pic">
+            <img src="assets/images/test.jpg" alt="not found">
+            <h3 id="name"></h3>
+            <p>IIIT Bangalore<br>
+                <button type="submit" id="button">Update Photograph</button><br></p>
+        </div>
+
+        <div class="col-md-6 ">
+
+            <form>
+
+                <div class="form-group">
+                    <form>
+                        <label for="empid">Employee Id:</label>
+                        <p id="empid"></p><br>
+                        <label for="fname">First name:</label>
+                        <p id="fname"></p><br>
+                        <label for="lname">Last name:</label>
+                        <p id="lname"></p><br>
+                        <label for="email">Email id:</label>
+                        <p id="email"></p><br>
+                        <label for="dept">Department:</label>
+                        <p id="dept"></p><br>
+                        <label for="title">Title:</label>
+                        <p id="title"></p><br>
+                    </form>
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+
+<button type="submit" id="cs" class=" submit-button">Select Courses</button><br>
+<button type="submit" id="logout" class=" submit-button">Sign Out</button><br>
+<script type="text/javascript">
+    document.getElementById("logout").onclick = function() {
+        location.href = "index.html";
+    };
+</script>
+
+<script type="text/javascript">
+    document.getElementById("cs").onclick = function() {
+        location.href = "courseSel.html";
+    };
+</script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/myprof.js"></script>
+</body>
+
+</html>

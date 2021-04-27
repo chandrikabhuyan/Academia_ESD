@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Academia</title>
+    <link href="assets/css/login.css" rel="stylesheet">
+
+</head>
+<body>
+<form class="form-signin" id="login-validation">
+<div class="split left"></div>
+<div class="split right">
+    <img src="assets/images/1-2.png" class="center">
+    <h2>WELCOME TO IIITB</h2>
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="email" required><br>
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="pwd" required><br>
+    <button type="submit" id="submit-button">Login</button><br>
+    <div class="alert alert-warning" id="login-alert" role="alert" style="display: none; margin-top: 20px">
+        Invalid Credentials!!
+    </div>
+</div>
+</form>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/login-validation.js"></script>
+</html>
